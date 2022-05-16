@@ -69,6 +69,7 @@ flutter:
     - assets/background.png
     - assets/background2.png
     - assets/background3.png
+    - assets/posts.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
