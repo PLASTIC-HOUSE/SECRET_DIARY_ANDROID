@@ -28,10 +28,11 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Align(
       alignment: align,
-      child: Container(
+      child: SizedBox(
         width: width,
         height: height,
         child: RaisedButton(
+          elevation: 0.0,
           child: Text(
             text,
             style: TextStyle(color: textColor, fontSize: textSize),
