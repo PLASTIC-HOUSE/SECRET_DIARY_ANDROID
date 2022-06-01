@@ -1,3 +1,4 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -10,7 +11,10 @@ void main() {
       providers: [
         ChangeNotifierProvider<SignUpHelper>(create: (_) => SignUpHelper()),
       ],
-      child: MyApp(),
+      child: DevicePreview(
+        enabled: false,
+        builder: (context) => const MyApp(),
+      ),
     ),
   );
 }

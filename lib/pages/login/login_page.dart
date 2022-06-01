@@ -13,7 +13,7 @@ class LoginPage extends StatelessWidget {
         children: [
           Image.asset(
             'assets/background.png',
-            fit: BoxFit.fitWidth,
+            fit: BoxFit.cover,
           ),
           Center(
             child: Column(

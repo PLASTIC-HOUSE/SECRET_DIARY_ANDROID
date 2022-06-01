@@ -1,14 +1,18 @@
 class Post {
   Post({
+    this.name,
     this.posts,
   });
+  String? name;
   List<Value>? posts;
 
   factory Post.fromJson(Map<String, dynamic> json) => Post(
+        name: json['name'],
         posts: List<Value>.from(json['posts'].map((x) => Value.fromJson(x))),
       );
 
   Map<String, dynamic> toJson() => {
+        'name': name,
         'posts': List<dynamic>.from(posts!.map((x) => x.toJson())),
       };
 }

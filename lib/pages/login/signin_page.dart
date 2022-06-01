@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:secret_diary/pages/home_page.dart';
+import 'package:secret_diary/pages/test.dart';
 import 'package:secret_diary/widgets/custom_button.dart';
 import 'package:syncfusion_flutter_signaturepad/signaturepad.dart';
 
@@ -11,13 +12,12 @@ class SignInPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
       body: Stack(
         fit: StackFit.expand,
         children: [
           Image.asset(
             'assets/background2.png',
-            fit: BoxFit.fitHeight,
+            fit: BoxFit.cover,
             color: Colors.grey.withOpacity(0.5),
             colorBlendMode: BlendMode.modulate,
           ),
@@ -59,6 +59,12 @@ class SignInPage extends StatelessWidget {
                   // final bytes =
                   //     await data.toByteData(format: ImageByteFormat.png);
                   // final image = bytes!.buffer.asUint8List();
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => TestPage(image: image),
+                  //   ),
+                  // );
 
                   Navigator.pop(context);
                   Navigator.pop(context);

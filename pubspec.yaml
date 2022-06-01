@@ -38,6 +38,7 @@ dependencies:
   http: ^0.13.4
   provider: ^6.0.2
   syncfusion_flutter_signaturepad: ^20.1.56
+  device_preview: ^1.0.0
 
 dev_dependencies:
   flutter_test:

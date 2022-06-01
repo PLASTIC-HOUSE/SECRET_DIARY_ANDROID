@@ -14,7 +14,7 @@ class PostDetailPage extends StatelessWidget {
         children: [
           Image.asset(
             'assets/background3.png',
-            fit: BoxFit.fitHeight,
+            fit: BoxFit.cover,
             color: Colors.white38,
             colorBlendMode: BlendMode.dstOut,
           ),

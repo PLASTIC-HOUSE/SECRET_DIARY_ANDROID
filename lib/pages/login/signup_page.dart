@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_drawing_board/flutter_drawing_board.dart';
 import 'package:provider/provider.dart';
 import 'package:secret_diary/providers/signup_provider.dart';
 import 'package:secret_diary/widgets/custom_button.dart';
@@ -19,13 +18,12 @@ class SignupPage extends StatelessWidget {
     var provider = Provider.of<SignUpHelper>(context);
 
     return Scaffold(
-      backgroundColor: Colors.grey,
       body: Stack(
         fit: StackFit.expand,
         children: [
           Image.asset(
             'assets/background2.png',
-            fit: BoxFit.fitHeight,
+            fit: BoxFit.cover,
             color: Colors.grey.withOpacity(0.5),
             colorBlendMode: BlendMode.modulate,
           ),
@@ -58,9 +56,11 @@ class SignupPage extends StatelessWidget {
                     text: '다음',
                     backgroundColor: Colors.white,
                     onPressed: () {
-                      _controller.animateTo(MediaQuery.of(context).size.width,
-                          duration: const Duration(milliseconds: 300),
-                          curve: Curves.easeIn);
+                      _controller.animateTo(
+                        MediaQuery.of(context).size.width,
+                        duration: const Duration(milliseconds: 300),
+                        curve: Curves.ease,
+                      );
                     },
                   ),
                 ],
